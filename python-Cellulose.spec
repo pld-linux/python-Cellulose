@@ -1,9 +1,6 @@
 #
-# TODO :
-# - polish desc
-#
 %define	module	Cellulose
-
+#
 Summary:	Python/Cellulose package
 Summary(pl.UTF-8):	Pakiet Python/Cellulose
 Name:		python-%{module}
@@ -16,13 +13,16 @@ Source0:	http://cheeseshop.python.org/packages/source/C/Cellulose/%{module}-%{ve
 URL:		http://cheeseshop.python.org/pypi/Cellulose/
 BuildRequires:	python >= 1:2.4
 BuildRequires:	python-setuptools
+BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Stateful, object-oriented, pseudo-functional programming in python.
 
-#% description -l pl.UTF-8
+%description -l pl.UTF-8
+Stanowe, zorientowane obiektowo, pseudo-funkcyjne programowanie w
+języku Python.
 
 %prep
 %setup -q -n %{module}-%{version}
