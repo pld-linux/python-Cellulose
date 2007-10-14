@@ -8,14 +8,14 @@ Version:	0.2
 Release:	1
 License:	BSD
 Group:		Libraries/Python
-Source0:	http://cheeseshop.python.org/packages/source/C/Cellulose/%{module}-%{version}.tar.gz 
+Source0:	http://cheeseshop.python.org/packages/source/C/Cellulose/%{module}-%{version}.tar.gz
 # Source0-md5:	fc62bc2867fc20832b2d75e63cfd5434
 URL:		http://cheeseshop.python.org/pypi/Cellulose/
 BuildRequires:	python >= 1:2.4
 BuildRequires:	python-setuptools
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
-BuildArch:      noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,7 +29,7 @@ języku Python.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build 
+python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
