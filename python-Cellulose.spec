@@ -5,7 +5,7 @@ Summary:	Python/Cellulose package
 Summary(pl.UTF-8):	Pakiet Python/Cellulose
 Name:		python-%{module}
 Version:	0.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/C/Cellulose/%{module}-%{version}.tar.gz
