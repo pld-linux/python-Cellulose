@@ -29,7 +29,7 @@ języku Python.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
